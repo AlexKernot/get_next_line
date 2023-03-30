@@ -6,7 +6,7 @@
 /*   By: akernot <akernot@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/30 09:17:08 by akernot           #+#    #+#             */
-/*   Updated: 2023/03/30 09:18:05 by akernot          ###   ########.fr       */
+/*   Updated: 2023/03/30 16:26:56 by akernot          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 typedef struct s_list
 {
-	void	*buffer;
-	t_list	*next;
+	char	*buffer;
+	struct s_list	*next;
 }	t_list;
 t_list	*ft_lstnew(void *content);
 void	ft_lstadd_back(t_list **lst, t_list *new_lst);

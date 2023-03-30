@@ -6,10 +6,11 @@
 /*   By: akernot <akernot@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/30 09:19:07 by akernot           #+#    #+#             */
-/*   Updated: 2023/03/30 09:20:01 by akernot          ###   ########.fr       */
+/*   Updated: 2023/03/30 16:25:31 by akernot          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "get_next_line.h"
 #include "get_next_line_utils.h"
 
@@ -38,7 +39,5 @@ void	ft_lstadd_back(t_list **lst, t_list *new_lst)
 	}
 	while ((*lst)->next != 0)
 		lst = (*lst)->next;
-	return (lst);
-	end = ft_lstlast(*lst);
 	end->next = new_lst;
 }
