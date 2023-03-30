@@ -6,7 +6,7 @@
 /*   By: akernot <akernot@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/30 09:19:07 by akernot           #+#    #+#             */
-/*   Updated: 2023/03/30 16:25:31 by akernot          ###   ########.fr       */
+/*   Updated: 2023/03/30 16:50:11 by akernot          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,6 @@ void	ft_lstadd_back(t_list **lst, t_list *new_lst)
 		return ;
 	}
 	while ((*lst)->next != 0)
-		lst = (*lst)->next;
+		*lst = (*lst)->next;
 	end->next = new_lst;
 }
